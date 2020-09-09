@@ -132,7 +132,7 @@ public class Playfair {
 			output += out;
 		}
 		
-		return output;
+		return output.toUpperCase();
 	}
 	
 	public String decrypt() {
@@ -166,6 +166,6 @@ public class Playfair {
 			output += out;
 		}
 		
-		return output;
+		return output.toUpperCase();
 	}
 }

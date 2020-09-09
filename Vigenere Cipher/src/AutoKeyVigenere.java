@@ -30,8 +30,6 @@ public class AutoKeyVigenere {
                 extraKey++;
             }
         }
-        
-        System.out.println(keyEncrypt);
 
         return output;
     }
@@ -59,8 +57,6 @@ public class AutoKeyVigenere {
                 extraKey++;
             }
         }
-        
-        System.out.println(keyDecrypt);
 
         return output;
     }
