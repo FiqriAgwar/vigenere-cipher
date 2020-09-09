@@ -167,7 +167,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -348,15 +348,15 @@ public class GUI implements ActionListener{
 						plaintext = "";
 						data.forEach(datum -> plaintext += datum);
 						
-						keyField_1_1.setText(openFileChooser.getSelectedFile().getName());
-						plaintextPane_1.setText(plaintext);
+						textField_3.setText(openFileChooser.getSelectedFile().getName());
+						plaintextPane_1_1.setText(plaintext);
 					}
 					catch(IOException exception) {
 						System.out.println(exception);
 					}
 				}
 				else {
-					keyField_1_1.setText("No file chosen!");
+					textField_3.setText("No file chosen!");
 				}
 			}
 		});
@@ -369,7 +369,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -503,15 +503,15 @@ public class GUI implements ActionListener{
 						plaintext = "";
 						data.forEach(datum -> plaintext += datum);
 						
-						keyField_1_1.setText(openFileChooser.getSelectedFile().getName());
-						plaintextPane_1.setText(plaintext);
+						keyField_2.setText(openFileChooser.getSelectedFile().getName());
+						plaintextPane_1_1_1.setText(plaintext);
 					}
 					catch(IOException exception) {
 						System.out.println(exception);
 					}
 				}
 				else {
-					keyField_1_1.setText("No file chosen!");
+					keyField_2.setText("No file chosen!");
 				}
 			}
 		});
@@ -524,7 +524,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -679,7 +679,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -821,7 +821,7 @@ public class GUI implements ActionListener{
 						data.forEach(datum -> plaintext += datum);
 						
 						textField_4.setText(openFileChooser.getSelectedFile().getName());
-						plaintextPane_1.setText(plaintext);
+						plaintextPane_2.setText(plaintext);
 					}
 					catch(IOException exception) {
 						System.out.println(exception);
@@ -841,7 +841,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -988,7 +988,7 @@ public class GUI implements ActionListener{
 						data.forEach(datum -> plaintext += datum);
 						
 						textField_8.setText(openFileChooser.getSelectedFile().getName());
-						plaintextPane_1.setText(plaintext);
+						plaintextPane_2_1.setText(plaintext);
 					}
 					catch(IOException exception) {
 						System.out.println(exception);
@@ -1008,7 +1008,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -1148,7 +1148,7 @@ public class GUI implements ActionListener{
 						data.forEach(datum -> plaintext += datum);
 						
 						textField_5.setText(openFileChooser.getSelectedFile().getName());
-						plaintextPane_1.setText(plaintext);
+						plaintextPane_3.setText(plaintext);
 					}
 					catch(IOException exception) {
 						System.out.println(exception);
@@ -1168,7 +1168,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
@@ -1303,7 +1303,7 @@ public class GUI implements ActionListener{
 						data.forEach(datum -> plaintext += datum);
 						
 						textField_6.setText(openFileChooser.getSelectedFile().getName());
-						plaintextPane_1.setText(plaintext);
+						plaintextPane_3_1.setText(plaintext);
 					}
 					catch(IOException exception) {
 						System.out.println(exception);
@@ -1323,7 +1323,7 @@ public class GUI implements ActionListener{
 				int returnValue = saveFileChooser.showSaveDialog(null);
 				if(returnValue == JFileChooser.APPROVE_OPTION) {
 					try {
-						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile() + ".txt");
+						FileWriter fw = new FileWriter(saveFileChooser.getSelectedFile());
 						fw.write(ciphertext.toString());
 						fw.close();
 					}
